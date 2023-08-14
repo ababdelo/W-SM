@@ -1,0 +1,76 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+a{
+  margin: 0 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 24px;
+  box-shadow: 6px 6px 12px rgba(0,0,0,.15),
+              -6px -6px 12px rgba(255,255,255,.1);
+  overflow: hidden;
+  font-size: 28px;
+  transition: .3s linear;
+  position: relative;
+}
+
+a:hover{
+  transform: scale(1.3);
+  border-radius: 50%;
+}
+
+a i::before{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-size: 200% 200%;
+  background-position: 75% 75%;
+  top: 0;
+  left: 0;
+  line-height: 80px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .5s linear;
+}
+
+a:hover i::before{
+  background-position: 0% 0%;
+}
+
+.fa-facebook-f::before{
+  background-image: linear-gradient(135deg,#4267B2 30%,#2f2f2f 50%);
+}
+
+.fa-twitter::before{
+  background-image: linear-gradient(135deg,#1DA1F2 30%,#2f2f2f 50%);
+}
+
+.fa-github::before{
+  background-image: linear-gradient(135deg,#6e5494 30%,#2f2f2f 50%);
+}
+
+.fa-instagram::before{
+  background-image: linear-gradient(135deg,#E1306C 30%,#2f2f2f 50%);
+}
+
+.fa-youtube::before{
+  background-image: linear-gradient(135deg,#d71e18 30%,#2f2f2f 50%);
+}
+
+.fa-linkedin-in::before{
+  background-image: linear-gradient(135deg,#0072B1 30%,#2f2f2f 50%);
+}
+
+.fa-discord::before{
+  background-image: linear-gradient(135deg,#7289da 30%,#2f2f2f 50%);
+}
